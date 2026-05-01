@@ -10,5 +10,5 @@ app.listen(3000,()=>{
 
 function connectToDb(){mongoose.connect(`${url}day-06`).then(()=>{
   console.log("Connected to Database")
-})}
+}).catch(err=>console.log(err))}
 connectToDb()
